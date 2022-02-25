@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --bgRight:rgb(237, 196, 102);
+    --bgLeft:rgb(255, 236, 135);
+    --logoFont:#9b3b00;
+    --colorH2:#2d2e2e;
+    --buttonColor:#ebebdc;
+    --buttonHover:#f2740d;
+    --borderForm:#eec668;
+    --footer2:#f8de81;
+}
+.header{
+    background: linear-gradient(rgba(255,236,135,1),rgb(223, 183, 91),rgba(255,236,135,1),rgb(223, 183, 91));
+    width: 100%;
+    height: auto;
+}
+.area-header{
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+.area-logo{
+    display: flex;
+}
+nav .logo b{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--logoFont);
+}
+.area-logo .logo:nth-child(2){
+    margin-top: 15px;
+    margin-left: -11px;
+}
+nav ul{
+    display: flex;
+    align-items: flex-start;
+}
+nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all ease .3s;
+}
+nav ul li a.active{
+    color: #000;
+}
+nav ul li a:hover{
+    color: #000;
+}
+.header-info{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+.info h1{
+    font-size: 75px;
+    margin-bottom: 30px;
+}
+.info p{
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 300;
+}
+.info p:nth-child(3){
+    color: #FFF;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.info button{
+    padding: 15px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.info button:hover{
+    background-color: #000;
+    color: #FFF;
+}
+.img{
+    flex: 1;
+    height: auto;
+    padding: 0 20px;
+}
+.img img{
+    height:auto;
+    width: 90%;
+}
+.products{
+    max-width: 1140px;
+    margin: auto;
+}
+.best-jewellery {
+    text-align: center;
+    margin-top: 100px;
+}
+.best-jewellery h2{
+    font-size: 46px;
+    color: var(--colorH2);
+    margin-bottom: 20px;
+}
+.best-jewellery h2::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #9b3b00;
+}
+.best-jewellery p{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight:300;
+    color: var(--colorH2);
+}
+.ring1{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ring1 .info{
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.ring1 .info p{
+    line-height: 28px;
+    font-size: 17px;
+    color: #555;
+}
+.ring1 .ring-img{
+    width: 40%;
+    position: relative;
+}
+.ring1 .ring-img img{
+    border: 30px solid var(--borderForm);
+    border-radius: 50%;
+}
+.ring1 .ring-img p{
+    position: absolute;
+    bottom: 20%;
+    right: 27%;
+    color: #FFF;
+    font-size: 18px;
+}
+.ring1 .button-area{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 70px;
+}
+.ring1 .button-area button{
+    font-size: 17px;
+    background-color: #000;
+    color: #FFF;
+    border: 3px solid var(--borderForm);
+    padding: 15px 50px;
+}
+.ring1 .button-area button:hover{
+    background-color: var(--buttonHover);
+}
+.second .info{
+    padding-right: 10px;
+    padding-left: 20px;
+}
+.second .button-area {
+    justify-content: flex-start;
+}
+
+.contact{
+    text-align: center;
+    max-width: 1120px;
+    margin: auto;
+    max-height: 100vh;
+    padding: 0 20px;
+}
+.contact h2{
+    font-size: 46px;
+    color: var(--colorH2);
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.contact p{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight:300;
+    color: var(--colorH2);
+    margin-bottom: 50px;
+}
+.area-form{
+    display: flex;
+    position: relative;
+    max-height: 500px;
+}
+form{
+    border: 8px solid var(--borderForm);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+
+}
+form input, form textarea{
+    border: 0;
+    border-bottom: 1px solid var(--colorH2);
+    font-size: 17px;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    outline: none;
+}
+form textarea{
+    margin-bottom: 0;
+}
+form button{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 17px;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 50px;
+    border: 0;
+    border-radius: 27px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+form button:hover{
+    background-color: var(--buttonHover);
+}
+.area-img{
+    background-image: url('images/cac.png');
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+}
+
+
+.clients{
+    text-align: center;
+    max-width: 990px;
+    margin: auto;
+    max-height: 100vh;
+    padding: 0 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.clients h2{
+    font-size: 46px;
+    color: var(--colorH2);
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+.clients p{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight:300;
+    color: var(--colorH2);
+    margin-bottom: 50px;
+}
+.clients .area-info{
+    display: flex;
+    align-items: center;
+}
+.clients .area-info .aspas{
+    margin-right: 20px;
+}
+.client {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 20px solid var(--borderForm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client img{
+    width: 250px;
+    height: 250px;
+    border: 20px solid #000;
+    border-radius: 50%;
+}
+.clients .area-info .client-info {
+    padding: 0 20px 0 0;
+}
+.clients .area-info .client-info .area-name{
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--borderForm);
+    font-size: 18px;
+}
+.clients .area-info .client-info p{
+    background-color: #000;
+    padding: 20px;
+    color: #FFF;
+    text-align: left;
+    font-size: 16px;
+}
+.clients .area-info .client-info .pagination{
+    display: flex;
+    justify-content: flex-end;
+}
+.clients .area-info .client-info .pagination div{
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    margin-right: 10px;
+}
+.clients .area-info .client-info .pagination div:nth-child(1){
+    background-color: var(--borderForm);
+}
+
+footer{
+    margin: auto;
+}
+.footer-top{
+    background-color: var(--borderForm);
+    padding: 100px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top .left h4{
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer-top .left h3{
+    font-size: 31px;
+}
+.footer-top .right h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.footer-top .right h2:nth-child(2){
+    color: #FFF;
+    margin: 0;
+}
+.footer-bottom{
+    background-color: var(--footer2);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-bottom a:hover{
+    color: blue;
+}
