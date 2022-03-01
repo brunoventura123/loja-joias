@@ -258,7 +258,7 @@ form button:hover{
     background-color: var(--buttonHover);
 }
 .area-img{
-    background-image: url('images/cac.png');
+    background-image: url('assets/images/cac.png');
     background-position: center;
     background-size: cover;
     flex: 1;
